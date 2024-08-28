@@ -12,11 +12,24 @@ npm install react-native-pin-code-input
 
 
 ```js
-import { multiply } from 'react-native-pin-code-input';
+import OTPInput from 'react-native-pin-code-input';
 
 // ...
 
-const result = await multiply(3, 7);
+export default function App() {
+  const [otp, setOtp] = useState<string>('');
+  return (
+    <View style={styles.container}>
+      <OTPInput
+        containerStyle={{ width: '90%' }}
+        autoFocus
+        pinCount={6}
+        onOtpFilled={(code) => setOtp(code)}
+      />
+      {otp && <Text>Your OTP is {otp}</Text>}
+    </View>
+  );
+}
 ```
 
 
