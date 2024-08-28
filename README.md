@@ -10,6 +10,8 @@ npm install react-native-pin-code-input
 
 ## Usage
 
+https://github.com/user-attachments/assets/c82db95f-a52d-48b2-aeb9-0eb44bd1c103
+
 
 ```js
 import OTPInput from 'react-native-pin-code-input';
