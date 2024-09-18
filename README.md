@@ -5,7 +5,7 @@ React native otp input
 ## Installation
 
 ```sh
-npm install react-native-pin-code-input
+npm install react-native-otp-field-input
 ```
 
 ## Usage
